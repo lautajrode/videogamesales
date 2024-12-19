@@ -25,22 +25,24 @@ A partir de los datos obtenidos se crea un plan de metricas:
 
 Plan de análisis:
 
-Cantidad de ventas de videojuegos por género:
+- Cantidad de ventas de videojuegos por género:
 
 Identificar cuáles géneros dominan en términos de ventas globales.
 Comparar ventas por género en cada región (NA, EU, JP, Others).
 
-Suma de ventas por año:
+- Suma de ventas por año:
 
 Analizar las tendencias de ventas a lo largo de los años para identificar periodos de crecimiento o declive.
 
-Ventas por publisher:
+- Ventas por publisher:
 
 Determinar cuáles son las empresas más exitosas en términos de ventas globales y regionales.
-Ventas por género geográficamente:
+
+- Ventas por género geográficamente:
 
 Examinar cómo varían las preferencias de género según la región y qué géneros dominan en mercados clave.
-Ventas por plataforma:
+
+- Ventas por plataforma:
 
 Identificar cuáles plataformas generaron mayores ingresos globales.
 Verificar si la popularidad de una plataforma está relacionada con la cantidad de títulos publicados.
