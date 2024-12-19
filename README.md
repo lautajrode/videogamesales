@@ -7,44 +7,33 @@ El mismo fue obtenido y descargado del sitio web: [www.kaggle.com ](https://www.
 
 Características principales del dataset:
 
-Nombre del juego: El título del videojuego.
-Plataforma: La consola o sistema en el que el juego fue lanzado (e.g., PS4, Xbox, PC).
-Año de lanzamiento: El año en que se lanzó el videojuego.
-Género: El género del videojuego (e.g., Acción, Deportes, Rol).
-Publisher: La compañía que publicó el videojuego.
-Ventas regionales: Ventas desglosadas por región:
-NA_Sales: Ventas en América del Norte (en millones de dólares).
-EU_Sales: Ventas en Europa (en millones de dólares).
-JP_Sales: Ventas en Japón (en millones de dólares).
-Other_Sales: Ventas en otras regiones.
-Global_Sales: Ventas totales globales.
+- Nombre del juego: El título del videojuego.
+- Plataforma: La consola o sistema en el que el juego fue lanzado (e.g., PS4, Xbox, PC).
+- Año de lanzamiento: El año en que se lanzó el videojuego.
+- Género: El género del videojuego (e.g., Acción, Deportes, Rol).
+- Publisher: La compañía que publicó el videojuego.
+- Ventas regionales: Ventas desglosadas por región:
+- NA_Sales: Ventas en América del Norte (en millones de dólares).
+- EU_Sales: Ventas en Europa (en millones de dólares).
+- JP_Sales: Ventas en Japón (en millones de dólares).
+- Other_Sales: Ventas en otras regiones.
+- Global_Sales: Ventas totales globales.
 
 A partir de los datos obtenidos se crea un plan de metricas:
 
 ![plan de metricas](https://github.com/user-attachments/assets/5f857861-d164-433c-856f-f9a49252cf41)
 
-Luego se crea una capa silver del proyecto en GCP
+Plan de análisis:
 
-![imgcapasilver](https://github.com/user-attachments/assets/ec0dcff3-c81c-4144-a459-648e69e5ff95)
-
-
-Hipótesis principal:
-
-Los géneros más populares, como Acción y Deportes, tienden a generar mayores ventas globales, especialmente en plataformas con una amplia base de usuarios, como PlayStation y Xbox.
-Hipótesis secundarias:
-
-Los videojuegos publicados por compañías grandes (como Nintendo y Electronic Arts) generan mayores ventas globales debido a su capacidad de marketing y distribución.
-Las ventas de videojuegos tienen un pico en años específicos debido al lanzamiento de nuevas consolas o franquicias exitosas.
-La preferencia por géneros varía por región: Japón muestra mayor interés por los géneros RPG y Aventura, mientras que América del Norte prefiere Acción y Deportes.
-Las plataformas con mayor número de títulos exclusivos tienen ventajas significativas en ventas globales y regionales.
-Plan de análisis basado en la hipótesis
 Cantidad de ventas de videojuegos por género:
 
 Identificar cuáles géneros dominan en términos de ventas globales.
 Comparar ventas por género en cada región (NA, EU, JP, Others).
+
 Suma de ventas por año:
 
 Analizar las tendencias de ventas a lo largo de los años para identificar periodos de crecimiento o declive.
+
 Ventas por publisher:
 
 Determinar cuáles son las empresas más exitosas en términos de ventas globales y regionales.
@@ -55,3 +44,40 @@ Ventas por plataforma:
 
 Identificar cuáles plataformas generaron mayores ingresos globales.
 Verificar si la popularidad de una plataforma está relacionada con la cantidad de títulos publicados.
+
+
+Luego se crea una capa silver del proyecto en GCP
+
+![imgcapasilver](https://github.com/user-attachments/assets/ec0dcff3-c81c-4144-a459-648e69e5ff95)
+
+Ya en Power BI, se crean las diferentes tablas metricas realizando sus correspondientes consultas en DAX:
+
+![imgtablas](https://github.com/user-attachments/assets/b7c3b734-8643-4760-a2cb-ee94bf2af40f)
+
+![imgdax](https://github.com/user-attachments/assets/093cc023-7a4f-4ea9-8950-fce0b9c94b7c)
+
+![imgdaxtabla](https://github.com/user-attachments/assets/44cd9f61-a77f-4ad8-a937-f7b4d0fc21b5)
+
+A partir de nuestros datos, se eligen las distintas visualizaciones para crear nuestras metricas:
+
+![datosyvisualizaciones](https://github.com/user-attachments/assets/823f1277-240c-4efa-94e7-f64b6d316281)
+
+Asi quedarian los dashboards
+
+![dashboard1](https://github.com/user-attachments/assets/0497b8bb-0161-4f3f-a460-89a6dd208cdb)
+
+![dashboard2](https://github.com/user-attachments/assets/f5e5deda-3523-46a7-a0d6-7435932a2e09)
+
+
+
+Hipótesis principal:
+
+Los géneros más populares, como Acción y Deportes, tienden a generar mayores ventas globales, especialmente en plataformas con una amplia base de usuarios, como PlayStation y Xbox.
+
+Hipótesis secundarias:
+
+Los videojuegos publicados por compañías grandes (como Nintendo y Electronic Arts) generan mayores ventas globales debido a su capacidad de marketing y distribución.
+Las ventas de videojuegos tienen un pico en años específicos debido al lanzamiento de nuevas consolas o franquicias exitosas.
+La preferencia por géneros varía por región: Japón muestra mayor interés por los géneros RPG y Aventura, mientras que América del Norte prefiere Acción y Deportes.
+Las plataformas con mayor número de títulos exclusivos tienen ventajas significativas en ventas globales y regionales.
+
