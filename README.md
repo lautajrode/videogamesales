@@ -5,7 +5,6 @@ El mismo fue obtenido y descargado del sitio web: [www.kaggle.com ](https://www.
 
 ![imgkaggle](https://github.com/user-attachments/assets/8af3dea0-9e1e-4ce1-b143-9a60f51217a0)
 
-
 Características principales del dataset:
 
 Nombre del juego: El título del videojuego.
@@ -20,6 +19,13 @@ JP_Sales: Ventas en Japón (en millones de dólares).
 Other_Sales: Ventas en otras regiones.
 Global_Sales: Ventas totales globales.
 
+A partir de los datos obtenidos se crea un plan de metricas:
+
+![plan de metricas](https://github.com/user-attachments/assets/5f857861-d164-433c-856f-f9a49252cf41)
+
+Luego se crea una capa silver del proyecto en GCP
+
+![imgcapasilver](https://github.com/user-attachments/assets/ec0dcff3-c81c-4144-a459-648e69e5ff95)
 
 
 Hipótesis principal:
