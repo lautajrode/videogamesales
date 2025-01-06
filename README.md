@@ -52,6 +52,32 @@ Luego se crea una capa silver del proyecto en GCP
 
 ![Script creacion capa silver](https://github.com/user-attachments/assets/ecea4944-8a34-44be-8ca8-98175a9f5c03)
 
+SELECT * 
+FROM `bronze_video_game_sales.raw_vgsales`
+LIMIT 10;
+
+
+-- Crear tabla curada (Capa Silver)
+CREATE TABLE `trabajofinal-445014.silver_video_game_sales.silver_vgsales` AS
+SELECT 
+    Rank, 
+    Name,
+    Platform,
+    SAFE_CAST(Year AS INT64) AS Year,  -- Convierte a INT64 de forma segura (valores no numéricos se convierten en NULL)
+    Genre,
+    Publisher,
+    IFNULL(NA_Sales, 0) AS NA_Sales,  -- Reemplazar valores nulos con 0
+    IFNULL(EU_Sales, 0) AS EU_Sales,
+    IFNULL(JP_Sales, 0) AS JP_Sales,
+    IFNULL(Other_Sales, 0) AS Other_Sales,
+    IFNULL(Global_Sales, 0) AS Global_Sales
+FROM `trabajofinal-445014.bronze_video_game_sales.raw_vgsales`
+WHERE Name IS NOT NULL 
+  AND Platform IS NOT NULL
+  AND SAFE_CAST(Year AS INT64) IS NOT NULL;
+
+
+
 
 ![imgcapasilver](https://github.com/user-attachments/assets/ec0dcff3-c81c-4144-a459-648e69e5ff95)
 
