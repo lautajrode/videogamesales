@@ -50,6 +50,9 @@ Verificar si la popularidad de una plataforma está relacionada con la cantidad 
 
 Luego se crea una capa silver del proyecto en GCP
 
+![Script creacion capa silver](https://github.com/user-attachments/assets/ecea4944-8a34-44be-8ca8-98175a9f5c03)
+
+
 ![imgcapasilver](https://github.com/user-attachments/assets/ec0dcff3-c81c-4144-a459-648e69e5ff95)
 
 Ya en Power BI, se crean las diferentes tablas metricas realizando sus correspondientes consultas en DAX:
