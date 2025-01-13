@@ -5,6 +5,8 @@ El mismo fue obtenido y descargado del sitio web: [www.kaggle.com ](https://www.
 
 ![imgkaggle](https://github.com/user-attachments/assets/8af3dea0-9e1e-4ce1-b143-9a60f51217a0)
 
+---
+
 Características principales del dataset:
 
 - Nombre del juego: El título del videojuego.
@@ -19,9 +21,13 @@ Características principales del dataset:
 - Other_Sales: Ventas en otras regiones.
 - Global_Sales: Ventas totales globales.
 
+---
+
 A partir de los datos obtenidos se crea un plan de metricas:
 
 ![plan de metricas](https://github.com/user-attachments/assets/5f857861-d164-433c-856f-f9a49252cf41)
+
+---
 
 Plan de análisis:
 
@@ -47,10 +53,12 @@ Examinar cómo varían las preferencias de género según la región y qué gén
 Identificar cuáles plataformas generaron mayores ingresos globales.
 Verificar si la popularidad de una plataforma está relacionada con la cantidad de títulos publicados.
 
+---
 
 Luego se crea una capa silver del proyecto en GCP
+Utilizamos el siguiente codigo:
 
-![Script creacion capa silver](https://github.com/user-attachments/assets/ecea4944-8a34-44be-8ca8-98175a9f5c03)
+```
 
 SELECT * 
 FROM `bronze_video_game_sales.raw_vgsales`
@@ -76,22 +84,125 @@ WHERE Name IS NOT NULL
   AND Platform IS NOT NULL
   AND SAFE_CAST(Year AS INT64) IS NOT NULL;
 
-
+```
 
 
 ![imgcapasilver](https://github.com/user-attachments/assets/ec0dcff3-c81c-4144-a459-648e69e5ff95)
 
+---
+
 Ya en Power BI, se crean las diferentes tablas metricas realizando sus correspondientes consultas en DAX:
 
-![imgtablas](https://github.com/user-attachments/assets/b7c3b734-8643-4760-a2cb-ee94bf2af40f)
+![Imgtablas2](https://github.com/user-attachments/assets/35650fc8-70bc-48da-b5c2-ecd1ffac774a)
 
-![imgdax](https://github.com/user-attachments/assets/093cc023-7a4f-4ea9-8950-fce0b9c94b7c)
 
-![imgdaxtabla](https://github.com/user-attachments/assets/44cd9f61-a77f-4ad8-a937-f7b4d0fc21b5)
+En el caso de la primer tabla, la consulta para el top 10 de videojuegos seria asi:
+
+```
+Top_10_videojuegos = 
+TOPN(10,
+     'silver_vgsales',
+     'silver_vgsales'[Global_Sales],
+     DESC)
+```
+
+Y dara como resultado la siguiente tabla:
+
+![imgdaxtabla](https://github.com/user-attachments/assets/7855629d-502b-45cd-9246-2f263d94a380)
+
+Para las demas tablas utilizaremos las siguientes consultas:
+
+Top 5 publishers: 
+
+```
+
+Top_5_Publishers = 
+TOPN(5,
+     SUMMARIZE(
+         'silver_vgsales',
+         'silver_vgsales'[Publisher],
+         "Total_Ventas", SUM('silver_vgsales'[Global_Sales])
+     ),
+     [Total_Ventas],
+     DESC)
+
+```
+
+Ventas por año: 
+
+```
+
+Ventas_Por_Anio = 
+SUMMARIZE(
+    'silver_vgsales',
+    'silver_vgsales'[Year],
+    "Total_Ventas", SUM('silver_vgsales'[Global_Sales])
+)
+
+```
+
+Ventas por genero:
+
+```
+
+Ventas_Por_Genero = 
+SUMMARIZE(
+    'silver_vgsales',
+    'silver_vgsales'[Genre],
+    "Total_Ventas", SUM('silver_vgsales'[Global_Sales])
+)
+
+```
+
+Ventas por genero en distintas regiones:
+
+```
+
+Ventas_Por_Genero_Region = 
+SUMMARIZE(
+    'silver_vgsales',
+    'silver_vgsales'[Genre],
+    "Ventas_NA", SUM('silver_vgsales'[NA_Sales]),
+    "Ventas_EU", SUM('silver_vgsales'[EU_Sales]),
+    "Ventas_JP", SUM('silver_vgsales'[JP_Sales]),
+    "Ventas_Other", SUM('silver_vgsales'[Other_Sales])
+)
+
+```
+
+Ventas por plataforma: 
+
+```
+
+Ventas_Por_Plataforma = 
+SUMMARIZE(
+    'silver_vgsales',
+    'silver_vgsales'[Platform],
+    "Total_Ventas", SUM('silver_vgsales'[Global_Sales])
+)
+
+```
+
+Distribucion regional ventas: 
+
+```
+
+Distribucion_Regional_Ventas = 
+SUMMARIZE(
+    'silver_vgsales',
+    'silver_vgsales'[Name],
+    "Ventas_NA", SUM('silver_vgsales'[NA_Sales]),
+    "Ventas_EU", SUM('silver_vgsales'[EU_Sales]),
+    "Ventas_JP", SUM('silver_vgsales'[JP_Sales]),
+    "Ventas_Other", SUM('silver_vgsales'[Other_Sales])
+)
+```
+
 
 A partir de nuestros datos, se eligen las distintas visualizaciones para crear nuestras metricas:
 
-![datosyvisualizaciones](https://github.com/user-attachments/assets/823f1277-240c-4efa-94e7-f64b6d316281)
+![datosyvisualizaciones2](https://github.com/user-attachments/assets/7ba00c14-eb4f-4857-a548-3a90f614f4f8)
+
 
 Asi quedarian los dashboards
 
