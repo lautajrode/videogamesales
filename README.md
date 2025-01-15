@@ -231,13 +231,22 @@ Los videojuegos publicados por compañías grandes (como Nintendo y Electronic A
 ![hipotesis2](https://github.com/user-attachments/assets/1e563f3a-3505-44d3-8c51-e0091d3a7b21)
 
 Las ventas de videojuegos tienen un pico en años específicos debido al lanzamiento de nuevas consolas o franquicias exitosas.
+
 Consolas Exitosas
+
 PlayStation 2 (PS2) - 2000
+
 Nintendo DS - 2004
+
 Wii - 2006
+
 Xbox 360 - 2005
+
 PlayStation 3 (PS3) - 2006
+
+
 Franquicias de Juegos Exitosas
+
 Grand Theft Auto (GTA) - Vice City (2002), San Andreas (2004), GTA IV (2008)
 Call of Duty - Modern Warfare (2007), Black Ops (2010)
 Mario - Super Mario Galaxy (2007), New Super Mario Bros. (2006)
@@ -250,25 +259,33 @@ Guitar Hero - Guitar Hero III: Legends of Rock (2007)
 ![hipotesis3](https://github.com/user-attachments/assets/f591ec96-60c0-48f2-981f-c70c4ce2fdb6)
 
 Las plataformas con mayor número de títulos exclusivos tienen ventajas significativas en ventas globales y regionales.
+
 PlayStation 2 (PS2)
+
 Gran Turismo 3: A-Spec (2001)
 Gran Turismo 4 (2004)
 Final Fantasy X (2001)
 Metal Gear Solid 2: Sons of Liberty (2001)
 Kingdom Hearts (2002)
+
 Xbox 360
+
 Halo 3 (2007)
 Gears of War (2006)
 Gears of War 2 (2008)
 Forza Motorsport 2 (2007)
 Fable II (2008)
+
 PlayStation 3 (PS3)
+
 Uncharted 2: Among Thieves (2009)
 Gran Turismo 5 (2010)
 The Last of Us (2013)
 LittleBigPlanet (2008)
 God of War III (2010)
+
 Wii
+
 Wii Sports (2006)
 Mario Kart Wii (2008)
 New Super Mario Bros. Wii (2009)
