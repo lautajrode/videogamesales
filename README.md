@@ -204,11 +204,16 @@ A partir de nuestros datos, se eligen las distintas visualizaciones para crear n
 ![datosyvisualizaciones2](https://github.com/user-attachments/assets/7ba00c14-eb4f-4857-a548-3a90f614f4f8)
 
 
-Asi quedarian los dashboards
+Se crea una portada y luego 3 dashboards
 
-![dashboard1](https://github.com/user-attachments/assets/0497b8bb-0161-4f3f-a460-89a6dd208cdb)
+![dash1](https://github.com/user-attachments/assets/23e0d1b8-0b01-4818-b067-3e21dc1c7379)
 
-![dashboard2](https://github.com/user-attachments/assets/f5e5deda-3523-46a7-a0d6-7435932a2e09)
+![dash2](https://github.com/user-attachments/assets/84613a42-5d18-4987-bc78-42a421537936)
+
+![dash3](https://github.com/user-attachments/assets/471e6887-f7e3-4e8e-83cd-6dee7f74277d)
+
+![dash5](https://github.com/user-attachments/assets/284f50e7-69ab-4141-ac49-7594b0719f13)
+
 
 
 
@@ -216,10 +221,60 @@ Hipótesis principal:
 
 Los géneros más populares, como Acción y Deportes, tienden a generar mayores ventas globales, especialmente en plataformas con una amplia base de usuarios, como PlayStation y Xbox.
 
+![hipotesis1](https://github.com/user-attachments/assets/c2e5f723-5f67-4d93-a4b0-e39355356926)
+
+
 Hipótesis secundarias:
 
 Los videojuegos publicados por compañías grandes (como Nintendo y Electronic Arts) generan mayores ventas globales debido a su capacidad de marketing y distribución.
+
+![hipotesis2](https://github.com/user-attachments/assets/1e563f3a-3505-44d3-8c51-e0091d3a7b21)
+
 Las ventas de videojuegos tienen un pico en años específicos debido al lanzamiento de nuevas consolas o franquicias exitosas.
-La preferencia por géneros varía por región: Japón muestra mayor interés por los géneros RPG y Aventura, mientras que América del Norte prefiere Acción y Deportes.
+Consolas Exitosas
+PlayStation 2 (PS2) - 2000
+Nintendo DS - 2004
+Wii - 2006
+Xbox 360 - 2005
+PlayStation 3 (PS3) - 2006
+Franquicias de Juegos Exitosas
+Grand Theft Auto (GTA) - Vice City (2002), San Andreas (2004), GTA IV (2008)
+Call of Duty - Modern Warfare (2007), Black Ops (2010)
+Mario - Super Mario Galaxy (2007), New Super Mario Bros. (2006)
+Pokémon - Ruby and Sapphire (2003), Diamond and Pearl (2006)
+The Legend of Zelda - Twilight Princess (2006), Skyward Sword (2011)
+Halo - Halo 3 (2007), Halo: Reach (2010)
+Final Fantasy - Final Fantasy X (2001), Final Fantasy XIII (2009)
+Guitar Hero - Guitar Hero III: Legends of Rock (2007)
+
+![hipotesis3](https://github.com/user-attachments/assets/f591ec96-60c0-48f2-981f-c70c4ce2fdb6)
+
 Las plataformas con mayor número de títulos exclusivos tienen ventajas significativas en ventas globales y regionales.
+PlayStation 2 (PS2)
+Gran Turismo 3: A-Spec (2001)
+Gran Turismo 4 (2004)
+Final Fantasy X (2001)
+Metal Gear Solid 2: Sons of Liberty (2001)
+Kingdom Hearts (2002)
+Xbox 360
+Halo 3 (2007)
+Gears of War (2006)
+Gears of War 2 (2008)
+Forza Motorsport 2 (2007)
+Fable II (2008)
+PlayStation 3 (PS3)
+Uncharted 2: Among Thieves (2009)
+Gran Turismo 5 (2010)
+The Last of Us (2013)
+LittleBigPlanet (2008)
+God of War III (2010)
+Wii
+Wii Sports (2006)
+Mario Kart Wii (2008)
+New Super Mario Bros. Wii (2009)
+Super Mario Galaxy (2007)
+Super Smash Bros. Brawl (2008)
+
+![hipotesis4](https://github.com/user-attachments/assets/460e8dce-7094-4a5b-b622-c0c81d8d3907)
+
 
